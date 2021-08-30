@@ -1,4 +1,4 @@
-
+# LeetCode problem
 # Longest Common Prefix problem
 # Input list of strings
 # Goal is to find longest common prefix of strings in list
@@ -11,13 +11,13 @@ class LongestPrefix:
         if len(strs) == 0:
             return longest_prefix
 
-            # if only one word
+        # if only one word
         # set whole word as prefix and return
         if len(strs) == 1:
             longest_prefix = strs[0]
             return longest_prefix
 
-            # sort list
+        # sort list
         sorted_list = strs.sort()
 
         # compare first and last elements of array
@@ -38,7 +38,6 @@ class LongestPrefix:
                 return longest_prefix
 
             if i == last_word[count]:
-                # print(i)
                 longest_prefix += i
 
             count = count + 1
