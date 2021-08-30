@@ -3,7 +3,7 @@
 # Input list of strings
 # Goal is to find longest common prefix of strings in list
 class LongestPrefix:
-    def longestCommonPrefix(self, strs):
+    def longest_common_prefix(self, strs):
 
         longest_prefix = ""
 
@@ -34,7 +34,7 @@ class LongestPrefix:
             if count > (len(last_word) - 1):
                 return longest_prefix
 
-            if (i != last_word[count]):
+            if i != last_word[count]:
                 return longest_prefix
 
             if i == last_word[count]:
