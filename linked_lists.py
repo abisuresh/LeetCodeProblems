@@ -23,15 +23,12 @@ class Solution:
         if l1.val < l2.val:
             head = l1
             l1 = l1.next
-            otherList = l2
         elif l2.val < l1.val:
             head = l2
             l2 = l2.next
-            otherList = l1
         else:
             head = l1
             l1 = l1.next
-            otherList = l2
 
         node = head
 
