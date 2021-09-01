@@ -32,13 +32,13 @@ class Solution:
 
         node = head
 
-        while l1 != None or l2 != None:
-            if l1 == None:
+        while l1 is not None or l2 is not None:
+            if l1 is None:
                 print("l1 empty")
                 node.next = l2
                 break
 
-            if l2 == None:
+            if l2 is None:
                 node.next = l1
                 break
 
