@@ -1,9 +1,11 @@
-#Definition for a binary tree node.
+# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
+
 import typing
 
 
@@ -16,13 +18,14 @@ class Solution:
             return order
 
         if root.left:
-            self.inorderTraversal(root.left)
+            order.extend(self.inorderTraversal(root.left))
 
         order.append(root.val)
+        print(root.val)
 
         if root.right:
-            self.inorderTraversal(root.right)
+            order.extend(self.inorderTraversal(root.right))
 
-        print(root)
+        # print(root)
 
         return order
