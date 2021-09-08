@@ -1,4 +1,4 @@
-# Check if trees are the sam e
+# Check if trees are the same
 
 # Definition for a binary tree node.
 class TreeNode:
